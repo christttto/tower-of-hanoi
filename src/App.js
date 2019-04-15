@@ -21,17 +21,23 @@ class App extends Component {
       console.log("win, do win stuff")
     }
   }
-  renderPoleGrid(myPole){
-    return(
-      //oh gosh what am I doing
-      )
-    )
+  renderPoleGrid() {
+    return this.state.pole1.map((box, index) => (
+      <div
+        className="poleGrid"
+        key={index}
+        onClick={() => this.handleClick(index)}
+      >
+        {box}
+      </div>
+    ))
   }
   render() {
     return (
       <div className="container">
         <h1>I will make this happen</h1>
         <h1>Tower of Hanoi</h1>
+        <div className="pole">{this.renderPoleGrid()}</div>
         <button>Reset</button>
       </div>
     )
