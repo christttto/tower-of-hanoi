@@ -21,6 +21,9 @@ class App extends Component {
       console.log("win, do win stuff")
     }
   }
+  handleClick() {
+    //setState stuff
+  }
   renderPoleGrid() {
     return this.state.pole1.map((box, index) => (
       <div
