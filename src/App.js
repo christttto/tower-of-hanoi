@@ -25,6 +25,7 @@ class App extends Component {
     //setState stuff
   }
   renderPoleGrid() {
+    //need to understand the map thing better
     return this.state.pole1.map((box, index) => (
       <div
         className="poleGrid"
